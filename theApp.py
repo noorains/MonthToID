@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import datetime, timedelta
 
-def id_to_month_year(month_id, base_year=1990, base_month=1):
+def id_to_month_year(month_id, base_year=1980, base_month=1):
     # Calculate the target year and month based on the month ID
     target_year = base_year + (month_id - 1) // 12
     target_month = (base_month + (month_id - 1) % 12) % 12
