@@ -20,6 +20,7 @@ month_id = st.number_input("Enter the month ID (1 for January 1980, 2 for Februa
 
 if st.button("Convert"):
     result = id_to_month_year(month_id)
-    st.write(f"The corresponding month is: {result}")
+    #st.write(f"The corresponding month is: {result}")
+    st.markdown(f"<p style='font-size:24px;'><b>The corresponding month is: {result}</b></p>", unsafe_allow_html=True)
 
 st.write("Note: 1 = January 1980, 2 = February 1980, and so on.")
