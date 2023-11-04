@@ -14,7 +14,7 @@ def id_to_month_year(month_id, base_year=1980, base_month=1):
 
     return target_date.strftime("%B %Y")
 
-st.title("VIEWS ID to Month-Year Converter")
+st.title("VIEWS Month ID to Month-Year Converter")
 
 month_id = st.number_input("Enter the month ID (1 for January 1980, 2 for February 1980, and so on):", min_value=1, value=1)
 
