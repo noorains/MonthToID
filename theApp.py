@@ -16,10 +16,10 @@ def id_to_month_year(month_id, base_year=1980, base_month=1):
 
 st.title("ID to Month-Year Converter")
 
-month_id = st.number_input("Enter the month ID (1 for January 1990, 2 for February 1990, and so on):", min_value=1, value=1)
+month_id = st.number_input("Enter the month ID (1 for January 1980, 2 for February 1980, and so on):", min_value=1, value=1)
 
 if st.button("Convert"):
     result = id_to_month_year(month_id)
     st.write(f"The corresponding date is: {result}")
 
-st.write("Note: 1 = January 1990, 2 = February 1990, and so on.")
+st.write("Note: 1 = January 1980, 2 = February 1980, and so on.")
