@@ -14,13 +14,13 @@ def id_to_month_year(month_id, base_year=1980, base_month=1):
 
     return target_date.strftime("%B %Y")
 
-st.title("ID to Month-Year Converter")
+st.title("VIEWS ID to Month-Year Converter")
 
 month_id = st.number_input("Enter the month ID (1 for January 1980, 2 for February 1980, and so on):", min_value=1, value=1)
 
 if st.button("Convert"):
     result = id_to_month_year(month_id)
     #st.write(f"The corresponding month is: {result}")
-    st.markdown(f"<p style='font-size:24px;'><b>The corresponding month is: {result}</b></p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='font-size:24px;'><b>The corresponding month for id {month_id} is: {result}</b></p>", unsafe_allow_html=True)
 
 st.write("Note: 1 = January 1980, 2 = February 1980, and so on.")
