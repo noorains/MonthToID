@@ -30,7 +30,7 @@ def id_to_month_year(month_id, base_year=1980):
 
     return target_date.strftime("%B %Y")
 
-st.title("Month Converter")
+st.title("VIEWS Month Converter")
 
 conversion_option = st.sidebar.radio("Select Conversion:", ["Month Name to Month ID", "Month ID to Month Name"])
 
